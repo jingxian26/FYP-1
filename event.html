@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+
+    <!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+.event-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-container h3.year {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.event-container .event {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+}
+
+.event .event-left {
+  background: #222;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date {
+  font-size: 56px;
+}
+
+.event .event-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.event .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.event .event-right h3.event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #218bbb;
+  text-transform: uppercase;
+}
+
+.event .event-right .event-timing {
+  background: #fff8ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.event .event-right .event-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size: 30px;
+    margin-bottom: -14px;
+}
+
+@media (max-width: 550px) {
+  .event {
+    flex-direction: column;
+  }
+
+  .event .event-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .event .event-left .event-date .date,
+  .event .event-left .event-date .month {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .event .event-left .event-date {
+    padding: 10px 0;
+  }
+}
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">E-<span>EDU</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="course.html">course</a>
+        <a href="teacher.html">teacher</a>
+        <a href="event.html">event</a>
+        <!--<a href="price.html">price</a>-->
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    	<a href="login.html">login</a>
+    </nav>
+
+</header>
+</div>
+
+<!-- home section  -->
+
+<div class="container">
+<section class="home">
+
+<div class="event-container">
+      <h3 class="year">2022</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">1</div>
+            <div class="month">Jan</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title"><a href="https://eedulab.000webhostapp.com/E_MATH_EVENT.html">Elementary Math Quiz</a></h3>
+
+          <div class="event-description">
+            This competition is suitable for elementary school level of mathematics, anyone can participate in the competition
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> Available Now!
+            
+          </div>
+
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">1</div>
+            <div class="month">Feb</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Elementary Chinese Quiz</h3>
+
+          <div class="event-description">
+            This competition is suitable for elementary school level of chinese, anyone can participate in the competition
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:45 am
+          </div>
+
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">1</div>
+            <div class="month">Mar</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">1</div>
+            <div class="month">Mar</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:30 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">1</div>
+            <div class="month">Apr</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Some Title Here</h3>
+
+          <div class="event-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            ratione.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>  
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Our website offers the most comprehensive materials to help 
+users learn more easily.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="course.html">course</a>
+            <a href="teacher.html">teacher</a>
+            <a href="event.html">event</a>
+            <!--<a href="price.html">price</a>-->
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+            <a href="login.html">login</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +601137386964 </p>
+           <p> <i class="fas fa-envelope"></i> eeducenter96@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> pasir gudang, malaysia - 81700 </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> E-EDU.Center </span> | all rights reserved </div>
+
+
+	</section>
+</div>
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
